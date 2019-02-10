@@ -14,7 +14,7 @@ if __name__ == '__main__':
     with open(os.path.join(c_dir, "config/secrets.txt")) as key_file:
         api_key, secret, telegram_tkn, user_id = key_file.read().splitlines()
 
-    ccxt_ex = ccxt.bitfinex()
+    ccxt_ex = ccxt.bibox()
     ccxt_ex.apiKey = api_key
     ccxt_ex.secret = secret
 
